@@ -1,0 +1,4 @@
+# Skip when the toolchain is unavailable (e.g. deploy sandboxes that commit
+# the tree without node on PATH).
+command -v npx >/dev/null 2>&1 || exit 0
+npx lint-staged

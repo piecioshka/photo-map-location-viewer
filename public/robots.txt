@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://photo-map-location-viewer.netlify.app/sitemap.xml
