@@ -1,0 +1,67 @@
+{
+  "name": "photo-map-location-viewer",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "license": "MIT",
+  "author": {
+    "name": "Piotr Kowalski",
+    "email": "piecioshka@gmail.com",
+    "url": "https://piecioshka.pl"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/piecioshka/photo-map-location-viewer.git"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "vite --port $(detect-port 3000)",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test:e2e": "playwright test",
+    "lint": "eslint .",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@sentry/browser": "^10.69.0",
+    "exifr": "^7.1.3",
+    "heic2any": "^0.0.4",
+    "leaflet": "^1.9.4",
+    "leaflet-control-geocoder": "^4.0.0",
+    "leaflet.locatecontrol": "^0.90.0",
+    "leaflet.markercluster": "^1.5.3",
+    "vanilla-cookieconsent": "^3.1.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.62.1",
+    "@types/leaflet": "^1.9.12",
+    "@types/leaflet.markercluster": "^1.5.4",
+    "detect-port": "^2.1.0",
+    "eslint": "^10.8.0",
+    "eslint-config-prettier": "^10.1.8",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.3.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5.5.4",
+    "typescript-eslint": "^8.65.0",
+    "vite": "^6.0.0",
+    "vite-plugin-pwa": "^1.3.0",
+    "vitest": "^4.1.10",
+    "workbox-core": "^7.4.1",
+    "workbox-precaching": "^7.4.1"
+  },
+  "lint-staged": {
+    "*.{ts,js}": "eslint --fix",
+    "*": "prettier --write --ignore-unknown"
+  },
+  "allowScripts": {
+    "esbuild@0.25.12": true
+  }
+}

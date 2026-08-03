@@ -1,0 +1,16 @@
+# Photo Map - Location Viewer
+
+> Browser-only photo map: drop in photos and see where they were taken.
+> GPS coordinates and capture dates are read locally from EXIF data —
+> photos never leave the device. No backend, no accounts.
+
+Photos are grouped by city (reverse geocoding sends only coordinates to
+BigDataCloud), shown on a Leaflet map with clustering, a capture-order
+timeline, a calendar of photo days and an optional travel route with
+numbered per-city flags. Everything persists locally (localStorage +
+IndexedDB) and works offline as an installable PWA.
+
+## Links
+
+- [Live app](https://photo-map-location-viewer.netlify.app)
+- [Source & docs](https://github.com/piecioshka/photo-map-location-viewer)

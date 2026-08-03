@@ -1,0 +1,12 @@
+node_modules/
+dist/
+tmp/*
+!tmp/.gitkeep
+*.local
+.env
+.env.*
+!.env.example
+.DS_Store
+.netlify/
+test-results/
+playwright-report/
