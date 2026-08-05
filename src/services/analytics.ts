@@ -23,12 +23,15 @@ export function enableAnalytics(): void {
   loaded = true;
 
   window.dataLayer = window.dataLayer ?? [];
-  window.gtag = function gtag(...args: unknown[]) {
-    window.dataLayer?.push(args);
+  window.gtag = function gtag() {
+    // gtag.js recognizes commands only when the pushed value is the raw
+    // `arguments` object. A rest-parameter array looks identical but is
+    // silently ignored, so `config` never reaches GA and nothing is reported.
+    // eslint-disable-next-line prefer-rest-params
+    window.dataLayer?.push(arguments);
   };
   window.gtag("js", new Date());
-  // IP anonymization is on by default in GA4; keep cookies first-party only.
-  window.gtag("config", MEASUREMENT_ID, { anonymize_ip: true });
+  window.gtag("config", MEASUREMENT_ID);
 
   const script = document.createElement("script");
   script.async = true;
