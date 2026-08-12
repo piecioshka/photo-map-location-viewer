@@ -1,7 +1,6 @@
 # Photo Map - Location Viewer 📍
 
 ![Built with TypeScript](https://img.shields.io/badge/built%20with-TypeScript-3178c6.svg)
-
 [![CI](https://github.com/piecioshka/photo-map-location-viewer/actions/workflows/testing.yml/badge.svg)](https://github.com/piecioshka/photo-map-location-viewer/actions/workflows/testing.yml)
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
