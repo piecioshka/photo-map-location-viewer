@@ -1,3 +1,4 @@
+import "./leaflet-globals";
 import L from "leaflet";
 import "leaflet.markercluster";
 import { geocoder, geocoders } from "leaflet-control-geocoder";
