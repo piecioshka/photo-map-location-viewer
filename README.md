@@ -1,7 +1,7 @@
 # Photo Map - Location Viewer 📍
 
 ![Built with TypeScript](https://img.shields.io/badge/built%20with-TypeScript-3178c6.svg)
-[![CI](https://github.com/piecioshka/photo-map-location-viewer/actions/workflows/testing.yml/badge.svg)](https://github.com/piecioshka/photo-map-location-viewer/actions/workflows/testing.yml)
+[![CI](https://github.com/piecioshka/photo-map-location-viewer/actions/workflows/ci.yml/badge.svg)](https://github.com/piecioshka/photo-map-location-viewer/actions/workflows/ci.yml)
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 🗺️ Drop in your photos and see where they were taken — on a map, right in your browser. No backend, no uploads: GPS coordinates are read locally from EXIF data and photos never leave your device.
