@@ -8,7 +8,7 @@
 
 **Live:** https://photo-map-location-viewer.netlify.app
 
-![Photo Map - Location Viewer screenshot](docs/screenshot.png)
+![Photo Map - Location Viewer screenshot](docs/screenshots/main.png)
 
 ## Features ✨
 
